@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "f818097a-8a7e-471c-8749-afaf6cf4df84",
+		"name": "MidAssessment2 Question30",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23256147"
+	},
+	"item": [
+		{
+			"name": "Get employees by role",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/app/hr/resource/role/Admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"app",
+						"hr",
+						"resource",
+						"role",
+						"Admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/app/hr/resource",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"app",
+						"hr",
+						"resource"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get employee by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/app/hr/resource/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"app",
+						"hr",
+						"resource",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"name\": \"Gowtham\",\r\n    \"role\": \"Lead\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/app/hr/resource",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"app",
+						"hr",
+						"resource"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"name\":\"Mani Venkat\",\r\n    \"role\":\"Lead\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/app/hr/resource/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"app",
+						"hr",
+						"resource",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
